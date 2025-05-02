@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "elt-mspr"
+version = "0.1.0"
+description = "description"
+authors = [
+    { name = "terry", email = "barillon.terry.85@gmail.com" }
+]
+license = "MIT"
+dependencies = [
+    "dotenv",
+    "flask",
+    "mysql-connector",
+    "numpy",
+    "pandas",
+    "python-dateutil",
+    "python-dotenv",
+    "pytz",
+    "six",
+    "tqdm",
+    "tzdata",
+]
+
+[tool.setuptools]
+packages = ["db", "data", "scripts", "config"]
